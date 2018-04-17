@@ -8,6 +8,7 @@ import {
   MatToolbarModule,
   MatExpansionModule
   } from '@angular/material';
+import { MaterialButtonComponent } from './material-button/material-button.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {
     MatIconModule,
     MatButtonModule,
     MatExpansionModule
+    
   ],
-  declarations: [MaterialDemoComponent]
+  declarations: [MaterialDemoComponent, MaterialButtonComponent]
 })
 export class MaterialModule { }
