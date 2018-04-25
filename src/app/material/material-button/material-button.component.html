@@ -6,7 +6,7 @@
 
 <h3>Botones elevacion</h3>
 <div>
-  <button mat-raised-button>Normal</button>
+  <button mat-raised-button [disabled]="[!boton.estado]">Normal</button>
   <button mat-raised-button color="primary">Primario</button>
 </div>
 

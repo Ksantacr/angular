@@ -1,7 +1,7 @@
 export class ClassEstudiante {
 
     constructor(private id:number,
-    public nombre:string, private ciudad:string){
+    public nombre:string, public ciudad:string){
 
 
     }

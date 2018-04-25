@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialButtonComponent implements OnInit {
 
+  boton = {
+    estado: false
+  }
+
   constructor() { }
 
   ngOnInit() {
+
+    setTimeout(() => {
+      this.boton.estado = true;
+    }, 3000);
+
   }
 
 }

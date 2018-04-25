@@ -1,17 +1,21 @@
 <mat-list>
 
   <mat-list-item>
-    <img mat-list-avatar src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt="">
+      <!-- http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg -->
+    <img *ngIf="estudiante1.fotoUrl" mat-list-avatar [src]="estudiante1.fotoUrl" alt="">
+    <img *ngIf="!estudiante1.fotoUrl" mat-list-avatar src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt="">
     <span mat-line>{{estudiante1.nombre}}</span>
     <span mat-line>{{estudiante1.ciudad}}</span>
   </mat-list-item>
   <mat-list-item>
-      <img mat-list-avatar src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt="">
+      <img *ngIf="estudiante2.fotoUrl" mat-list-avatar [src]="estudiante2.fotoUrl" alt="">
+    <img *ngIf="!estudiante2.fotoUrl" mat-list-avatar src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt="">
       <span mat-line>{{estudiante2.nombre}}</span>
       <span mat-line>{{estudiante2.ciudad}}</span>
   </mat-list-item>
   <mat-list-item>
-      <img mat-list-avatar src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt="">
+      <img *ngIf="estudiante3.fotoUrl" mat-list-avatar [src]="estudiante3.fotoUrl" alt="">
+    <img *ngIf="!estudiante3.fotoUrl" mat-list-avatar src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt="">
       <span mat-line>{{estudiante3.nombre}}</span>
       <span mat-line>{{estudiante3.ciudad}}</span>
   </mat-list-item>

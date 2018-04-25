@@ -23,13 +23,14 @@ export class MaterialListComponent implements OnInit {
     this.estudiante1 = {
       id:1,
       nombre: 'Kevin',
-      ciudad: 'Guayaquil'
+      ciudad: 'Guayaquil',
+      fotoUrl: 'https://avatarfiles.alphacoders.com/715/71560.jpg'
     }
     this.estudiante2 = {
       id:1,
       nombre: 'Kevin',
       ciudad: 'Guayaquil',
-      fotoUrl: '//lorempixel.com/200/200'
+      fotoUrl: 'https://i.pinimg.com/736x/4e/d3/13/4ed313dfb6326a990da7a2e013a3cefc.jpg'
     }
     this.estudiante3 = {
       id:1,
@@ -39,6 +40,13 @@ export class MaterialListComponent implements OnInit {
     this.estudiante4 = new ClassEstudiante(4, 'Kevin', 'Guayaquil')
 
     setTimeout(() => {
+      this.estudiante3 = {
+        id:2,
+        nombre: 'Kevin',
+        ciudad: 'Nueva Ciudad - EC',
+        fotoUrl: 'https://avatarfiles.alphacoders.com/752/75205.png'
+      }
+
       this.estudiante4.nombre = "Dayi";
       console.log(this.estudiante4.getEdad());
     } , 3000);
