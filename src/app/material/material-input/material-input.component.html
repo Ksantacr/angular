@@ -1,6 +1,6 @@
 <h3>Input normal</h3>
 <mat-form-field>
-  <input matInput type="text" placeholder="Nombre" [value]="persona.nombre">
+  <input matInput type="text" placeholder="Nombre" [value]="persona.nombre" (blur)="guardarNombre($event)">
 </mat-form-field>
 
 <h3>Prefijo - Sufijo</h3>
@@ -8,7 +8,7 @@
 <mat-form-field>
   <span matPrefix>$ &nbsp;</span>
   <span matSuffix>:)</span>
-  <input matInput type="text" placeholder="Cantidad">
+  <input matInput type="text" placeholder="Nombre 2" [value]="persona.nombre">
 </mat-form-field>
 
 <h3>Hint</h3>

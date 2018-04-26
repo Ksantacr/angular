@@ -21,4 +21,8 @@ export class MaterialButtonComponent implements OnInit {
 
   }
 
+  agregarEstudiante(){
+    console.log("Agregando estudiante..")
+  }
+
 }

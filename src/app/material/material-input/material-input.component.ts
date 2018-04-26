@@ -14,8 +14,11 @@ export class MaterialInputComponent implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      this.persona.nombre = "Rafael Burgos"
+      this.persona.nombre = "!!";
     }, 3000);
+  }
+  guardarNombre($event){
+    this.persona.nombre = $event.target.value;
   }
 
 }
