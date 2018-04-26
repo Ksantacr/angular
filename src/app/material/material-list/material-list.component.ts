@@ -13,6 +13,7 @@ export class MaterialListComponent implements OnInit {
   estudiante2: Estudiante;
   estudiante3: Estudiante;
   estudiante4: ClassEstudiante;
+  listaEstudiante: Estudiante[];
 
   constructor() { }
 
@@ -37,19 +38,20 @@ export class MaterialListComponent implements OnInit {
       nombre: 'Kevin',
       ciudad: 'Guayaquil'
     }
-    this.estudiante4 = new ClassEstudiante(4, 'Kevin', 'Guayaquil')
+    this.listaEstudiante = [this.estudiante1, this.estudiante2, this.estudiante3];
+    //this.estudiante4 = new ClassEstudiante(4, 'Kevin', 'Guayaquil')
 
     setTimeout(() => {
-      this.estudiante3 = {
+      this.listaEstudiante[2] = {
         id:2,
         nombre: 'Kevin',
         ciudad: 'Nueva Ciudad - EC',
         fotoUrl: 'https://avatarfiles.alphacoders.com/752/75205.png'
       }
 
-      this.estudiante4.nombre = "Dayi";
-      console.log(this.estudiante4.getEdad());
-    } , 3000);
+      // this.estudiante4.nombre = "Dayi";
+      console.log(this.estudiante3.ciudad);
+      } , 3000);
 
   }
 
