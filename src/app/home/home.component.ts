@@ -17,8 +17,10 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.personaje = this.listaApiService.getPersonaje();
-    this.listaPersonajes = this.listaApiService.getListaPersonaje();
+    this.listaApiService.getApiPersonajes().subscribe(data => {
+      this.listaPersonajes = data;
+    });
+
     
   }
 
