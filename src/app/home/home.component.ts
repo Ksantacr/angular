@@ -14,12 +14,11 @@ export class HomeComponent implements OnInit {
   listaPersonajes: Array<Personaje>;
 
   constructor(private listaApiService: ListaApiService) {
-    this.personaje = this.listaApiService.getPersonaje();
-    this.listaPersonajes = this.listaApiService.getListaPersonaje();
-
   }
 
   ngOnInit() {
+    this.personaje = this.listaApiService.getPersonaje();
+    this.listaPersonajes = this.listaApiService.getListaPersonaje();
     
   }
 
