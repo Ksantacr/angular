@@ -15,6 +15,7 @@ export class MaterialListComponent implements OnInit {
   estudiante4: ClassEstudiante;
   listaEstudiante: Estudiante[];
 
+
   constructor() { }
 
   ngOnInit() {
@@ -25,33 +26,33 @@ export class MaterialListComponent implements OnInit {
       id:1,
       nombre: 'Kevin',
       ciudad: 'Guayaquil',
-      fotoUrl: 'https://avatarfiles.alphacoders.com/715/71560.jpg'
+      fotoUrl: 'assets/profile2.png'
     }
     this.estudiante2 = {
-      id:1,
-      nombre: 'Kevin',
-      ciudad: 'Guayaquil',
-      fotoUrl: 'https://i.pinimg.com/736x/4e/d3/13/4ed313dfb6326a990da7a2e013a3cefc.jpg'
+      id:2,
+      nombre: 'Rafael',
+      ciudad: 'Quito',
+      fotoUrl: 'assets/profile1.png'
     }
     this.estudiante3 = {
-      id:1,
-      nombre: 'Kevin',
-      ciudad: 'Guayaquil'
+      id:3,
+      nombre: 'Santacruz',
+      ciudad: 'Cuenca'
     }
     this.listaEstudiante = [this.estudiante1, this.estudiante2, this.estudiante3];
     //this.estudiante4 = new ClassEstudiante(4, 'Kevin', 'Guayaquil')
 
     setTimeout(() => {
       this.listaEstudiante[2] = {
-        id:2,
+        id:4,
         nombre: 'Kevin',
         ciudad: 'Nueva Ciudad - EC',
-        fotoUrl: 'https://avatarfiles.alphacoders.com/752/75205.png'
+        fotoUrl: 'assets/profile2.png'
       }
 
       // this.estudiante4.nombre = "Dayi";
       console.log(this.estudiante3.ciudad);
-      } , 3000);
+      } , 5000);
 
   }
 

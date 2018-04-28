@@ -1,10 +1,4 @@
 <mat-list>
-
-  <mat-list-item *ngFor="let estudiante of listaEstudiante">
-      <!-- http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg -->
-    <img *ngIf="estudiante.fotoUrl" mat-list-avatar [src]="estudiante1.fotoUrl" alt="">
-    <img *ngIf="!estudiante.fotoUrl" mat-list-avatar src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt="">
-    <span mat-line>{{estudiante.nombre}}</span>
-    <span mat-line>{{estudiante.ciudad}}</span>
-  </mat-list-item>
+  <app-item-estudiante *ngFor="let estudiante of listaEstudiante" [estudiante]="estudiante">
+  </app-item-estudiante>
 </mat-list>
