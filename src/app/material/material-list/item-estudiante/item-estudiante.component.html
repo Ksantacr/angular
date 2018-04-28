@@ -1,6 +1,7 @@
-<mat-list-item>
+<mat-list-item (click)="click(estudiante)">
     <!-- http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg -->
-  <img *ngIf="estudiante.fotoUrl" mat-list-avatar [src]="estudiante.fotoUrl" alt="">
+  <img
+  *ngIf="estudiante.fotoUrl" mat-list-avatar [src]="estudiante.fotoUrl" alt="">
   <img *ngIf="!estudiante.fotoUrl" mat-list-avatar [src]="DEFAULT_PICTURE" alt="">
   <span mat-line>{{estudiante.nombre}}</span>
   <span mat-line>{{estudiante.ciudad}}</span>

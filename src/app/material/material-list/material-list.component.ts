@@ -15,7 +15,6 @@ export class MaterialListComponent implements OnInit {
   estudiante4: ClassEstudiante;
   listaEstudiante: Estudiante[];
 
-
   constructor() { }
 
   ngOnInit() {
