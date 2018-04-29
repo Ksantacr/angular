@@ -3,7 +3,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.card-container .mat-card {
+.card-container .card-personaje{
     width: 300px;
     margin: 20px auto;
 }
