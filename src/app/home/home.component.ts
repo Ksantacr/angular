@@ -10,14 +10,14 @@ import { Personaje } from '../shared/model/personaje';
 })
 export class HomeComponent implements OnInit {
 
-  personaje: Personaje;
+  readonly DEFAUL_PICTURE:string = "https://yt3.ggpht.com/a-/AJLlDp1wqoHl_4lYD7G-If6NmIFF8-D1ONXKHabckA=s900-mo-c-c0xffffffff-rj-k-no";
   listaPersonajes: Array<Personaje>;
 
   constructor(private listaApiService: ListaApiService) {
   }
 
   ngOnInit() {
-    this.listaApiService.getApiPersonajes().subscribe(data => {
+    this.listaApiService.getApiPersonajes().subscribe((data:Array<Personaje>) => {
       this.listaPersonajes = data;
     });
 

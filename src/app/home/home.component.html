@@ -2,7 +2,8 @@
     <mat-card *ngFor="let personaje of listaPersonajes">
         <h3>Datos Estudiante</h3>
         <mat-card-header>
-            <img mat-card-avatar [src]="personaje.fotoPerfil" alt="">
+            <img mat-card-avatar *ngIf="personaje.fotoPerfil" [src]="personaje.fotoPerfil" alt="">
+            <img mat-card-avatar *ngIf="!personaje.fotoPerfil" [src]="DEFAUL_PICTURE" alt="">
             <mat-card-title>{{personaje.nombre}}</mat-card-title>
             <mat-card-subtitle>{{personaje.fecha | date}}</mat-card-subtitle>
         </mat-card-header>
@@ -11,8 +12,13 @@
             <p>{{personaje.descripcion}}</p>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-button color="primary"> Me gusta </button>
-            <button mat-button> Compartir </button>
+            
+            <button mat-icon-button color="warn">
+                <mat-icon>favorite</mat-icon>
+            </button>
+            <button mat-icon-button color="primary"><i class="material-icons">share</i></button>
+            <!-- <button mat-button color="primary"> Me gusta </button>
+            <button mat-button> Compartir </button> -->
         </mat-card-actions>
     </mat-card>
 </div>
