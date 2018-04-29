@@ -1,7 +1,10 @@
 <h3>Input normal</h3>
 <mat-form-field>
-  <input matInput type="text" placeholder="Nombre" [value]="persona.nombre" (blur)="guardarNombre($event)">
+  <input matInput type="text" placeholder="Nombre"
+  [(ngModel)]="persona.nombre"
+  (keyup)="guardarNombre($event)">
 </mat-form-field>
+<pre>{{persona.nombre | json}}</pre>
 
 <h3>Prefijo - Sufijo</h3>
 

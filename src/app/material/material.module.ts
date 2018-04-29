@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { FormsModule } from '@angular/forms' 
+
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
 import {
   MatIconModule,
@@ -28,7 +30,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatInputModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule
   ],
   exports: [
     MatToolbarModule,

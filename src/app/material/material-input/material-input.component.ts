@@ -13,12 +13,12 @@ export class MaterialInputComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.persona.nombre = "!!";
-    }, 3000);
+    // setTimeout(() => {
+    //   this.persona.nombre = "!!";
+    // }, 3000);
   }
   guardarNombre($event){
-    this.persona.nombre = $event.target.value;
+    //this.persona.nombre = $event.target.value;
   }
 
 }
